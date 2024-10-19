@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+    int n,i,j;
+     printf("enter elements of array:\n");
+    scanf("%d",&n);
+    int a1[n],a2[n],sum[n],diff[n],prod[n];
+    printf("enter the elements of first array:");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a1[i]);
+    }
+    printf("enter the elements of second array:");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a2[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        sum[i]=a1[i]+a2[i];
+        diff[i]=a1[i]-a2[i];
+        prod[i]=a1[i]*a2[i];
+    }
+    printf("\nsum:");
+    for(i=0;i<n;i++)
+    {
+        printf("%d\t",sum[i]);
+    }
+     printf("\ndifference:");
+     for(i=0;i<n;i++)
+    {
+        printf("%d\t",diff[i]);
+    }
+    printf("\nproduct:");
+     for(i=0;i<n;i++)
+    {
+        printf("%d\t",prod[i]);
+    }
+    
+    return 0;
+}
